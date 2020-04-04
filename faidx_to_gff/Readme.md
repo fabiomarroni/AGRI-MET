@@ -3,6 +3,6 @@ It should be used only in cases of "emergency", i.e. when you have the sequence 
 
 The assumptions are the following:
 
-- Each entry of the fasta index file is a gene. All genes will be treated as monoexonic.
+1) Each entry of the fasta index file is a gene. All genes will be treated as monoexonic.
 
 
