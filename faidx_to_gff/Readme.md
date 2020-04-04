@@ -1,8 +1,15 @@
-This function takes as input a fasta index (fai) file, and using tha creates a very simple gtf under some *heavy* assumptions.
+This function takes as input a fasta index (fai) file, and using tha creates a very simple gtf with some *heavy* limitations.
 It should be used only in cases of "emergency", i.e. when you have the sequence of a transcriptome, but not the genome, nor any idea on how the genes are divided into exons. If knowing exonic structure is important for you, then you shouldn't be using this function.
 
-The assumptions are the following:
+The **limitaitons** are the following:
 
 1) Each entry of the fasta index file is a gene. All genes will be treated as monoexonic.
+
+2) Column 6 (Score) will always be set as 1000. This can be changed inside the function. 
+
+3) Column 7 (strand) will always be coded as positive (+)
+
+4) Columns 8(frame) will always be set to unknown (".") 
+
 
 
