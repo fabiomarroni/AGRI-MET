@@ -16,5 +16,5 @@ The functions scripts contains all the R functions used in the (future) paper. A
 
 I tried to document everything clearly, but you may need some tweaking with software paths and or your own data. 
 
-The paper with the results of these analysis is currently under consideration for publication from Archives of Virology.
+The paper with the results of these analysis is currently under consideration for publication from [Archives of Virology](https://www.springer.com/journal/705?gclid=Cj0KCQjw-_j1BRDkARIsAJcfmTGxS6L6ca89fLIqkFdeXIb-Rh5b7Fde2TEdwcXyINNizXhhxGQcgrYaAuokEALw_wcB).
 
