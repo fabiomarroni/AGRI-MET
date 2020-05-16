@@ -7,24 +7,23 @@
 ###############################################################
 
 
-#You shouldn't need trimming
 
-# module load sw/aligners/erne/1.4.6
+module load sw/aligners/erne/1.4.6
 
-# READDIR=smallRNA/2016-08_AGRIMET/trimmed_reads
-# min_length=9
-# output_dir=smallRNA/2018/01_trimming/
-# for SUBDIR in 32_1 32_12 32_4
-# do
-# read1=${READDIR}/${SUBDIR}/01_trimming/*fastq.gz
-# prefix=$(echo $(basename $read1) | sed -e 's/.fastq.gz//g')
-# erne-filter \
-# --query1 ${read1} \
-# --min-size ${min_length} \
-# --threads 4 \
-# --gzip \
-# --output-prefix ${output_dir}/${prefix} > ${output_dir}/${prefix}_ernefilt.log
-# done
+READDIR=smallRNA/2016-08_AGRIMET/trimmed_reads
+min_length=9
+output_dir=smallRNA/2018/01_trimming/
+for SUBDIR in 32_1 32_12 32_4
+do
+read1=${READDIR}/${SUBDIR}/01_trimming/*fastq.gz
+prefix=$(echo $(basename $read1) | sed -e 's/.fastq.gz//g')
+erne-filter \
+--query1 ${read1} \
+--min-size ${min_length} \
+--threads 4 \
+--gzip \
+--output-prefix ${output_dir}/${prefix} > ${output_dir}/${prefix}_ernefilt.log
+done
 
 
 ###############################################################

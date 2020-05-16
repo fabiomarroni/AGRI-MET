@@ -8,7 +8,8 @@
 
 unset MYSTATS
 declare -a MYSTATS
-RNADIR=RNAseq/01_reads
+RNADIR=../RNAseq/01_reads
+mkdir -p $RNADIR/tables
 cd $RNADIR
 for aaa in *_1.fastq.gz
 do
@@ -21,7 +22,8 @@ echo ${MYSTATS[@]} > tables/RNAseq_reads.txt
 #COUNT smallRNA reads
 unset MYSTATS
 declare -a MYSTATS
-RNADIR=smallRNA/2018/01_trimming
+RNADIR=../smallRNA/2018/01_trimming
+mkdir -p $RNADIR/tables
 cd $RNADIR
 for aaa in *_1.fastq
 do
