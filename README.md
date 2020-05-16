@@ -10,4 +10,4 @@ I tried to document everything, but you may need some tweaking with software, pa
 
 The paper with the results of these analysis is currently under consideration for publication from [Archives of Virology](https://www.springer.com/journal/705?gclid=Cj0KCQjw-_j1BRDkARIsAJcfmTGxS6L6ca89fLIqkFdeXIb-Rh5b7Fde2TEdwcXyINNizXhhxGQcgrYaAuokEALw_wcB).
 
-**NOTE**: The folder faidx_to_gff contains a working example and toy data set of the R function used to create a simplified viral gff (I thought it was the onyl thing that deserved such attention). 
+**NOTE**: The folder faidx_to_gff contains a working example and toy data set of the R function used to create a simplified viral gff (I thought it was the only thing that deserved such attention). 
