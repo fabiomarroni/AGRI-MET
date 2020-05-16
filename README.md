@@ -6,9 +6,9 @@ The aim of the work is to define a detection threshold for positivity when asses
 
 The method *may* work as it is on other organisms, or it *may* need some adjustments.
 
-You might need to install specific software to run some of the scripts.
-
 The folder faidx_to_gff contains a one-click working example of the script with toy data of the script to greate a simplified viral gff. 
+
+You might need to install specific software to run some of the scripts. 
 
 The folder scripts contains all the shell and perl scripts used in the (future) paper.
 
