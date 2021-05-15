@@ -1,0 +1,68 @@
+#Folders 00_reads, 01_reads and/or 01_trimming are the folders in which raw and/or trimmed reads are.
+#Reads can be downloaded from SRA, accession PRJNA628964
+
+#Recommended project folder structure. Everything is relative to the AGRI-MET folder
+
+# AGRI-MET
+# |
+# |--Docs_val
+# |
+# |--functions
+# |
+# |--GPGV
+# |		|--reference
+# |		|--star
+# |
+# |--plots
+# |
+# |--reference
+# |		|
+# |		|--Kraken
+# |
+# |--RNAseq
+# |		|
+# |		|--01_reads
+# |		|--01a_kraken_VD206
+# |		|--02a_alignments_virusdb_vv
+# |
+# |--RNAseq_val
+# |		|
+# |		|--01_reads
+# |		|--01a_kraken_VD206
+# |		|--02a_alignments_virusdb_vv_val
+# |
+# |--scripts
+# |
+# |--smallRNA
+# | 	|
+# |		|--00_reads
+# |		|--01_trimmed
+# |		|--02_VirusDetect
+# |		|--03_smallRNA_tables
+# |		|--05_alignments_virusdb_vv
+# |
+# |--smallRNA_val
+# | 	|
+# |		|--00_reads
+# |		|--01_trimmed
+# |		|--02_VirusDetect
+# |		|--03_smallRNA_tables
+# |		|--05_alignments_virusdb_vv
+# |
+# |--software (NB: you are in charge of installing the software!)
+# |		|
+# |		|--Bracken2
+# |		|--kraken2-2.0.6-beta
+# |		|--VirusDetect_v1.7
+# |
+# |--tables
+# |
+# |--tables_techval
+# |
+# |--tables_val
+# |
+# |
+# |
+# |
+# |
+# |
