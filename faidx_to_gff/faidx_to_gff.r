@@ -5,7 +5,7 @@ suppressPackageStartupMessages({
 })
 
 option_list = list(
-  make_option(c("-X", "--indexfile"), type="character", default="my_faidx.fai",
+  make_option(c("-X", "--indexfile"), type="character", default="nucleotide_fasta_protein_homolog_model.fasta.fai",
               help="Fasta index file", metavar="character"),
   make_option(c("-S", "--sourcestring"), type="character", default="ttsg",
               help="Text string indicating the source of the gene prediction", metavar="character"),
@@ -40,7 +40,7 @@ if (is.null(opt$gtffile)) {
 transcriptome_to_simple_gtf<-function(indexfile,gtffile,sourcestring)
 {
 library("data.table")
-idx<-fread(indexfile,data.table=F)
+idx<-fread(indexfile,data.table=F,header=F,sep="\t")
 idx<-idx[,1:2]
 setnames(idx,"V2","V5")
 idx$V2<-sourcestring
